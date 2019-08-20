@@ -1,35 +1,27 @@
 import React from "react"
+import { Component } from "react"
 import { Link, graphql } from "gatsby"
-import "../styles/styles.css"
+
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faBars, faTimes, faCalendar } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class BlogIndex extends React.Component {
+library.add(faBars, faTimes, faCalendar)
+
+class BlogIndex extends Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+      <Layout title={siteTitle}>
+        <SEO title="Ebenist art">
+          <h1>Ebenist art</h1>
+        </SEO>
       </Layout>
     )
   }
