@@ -6,7 +6,7 @@ import "../styles/styles.css"
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
+    const { children } = this.props
 
     return (
       <div>

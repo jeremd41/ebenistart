@@ -20,7 +20,7 @@ class Header extends Component {
             Ebenist'Art
             </Link>
             <li>
-              <a href="#">Activités</a>
+              <a href="#">Services</a>
             </li>
             <li>
                 <a href="#">Réalisation</a>
@@ -28,9 +28,9 @@ class Header extends Component {
             <li>
                 <a href="#">A propos</a>
             </li>
-            <Link className="btn-reserver" to="/">
-              Contact
-            </Link>
+            <li>
+                <a href="#">Contact</a>
+            </li>
             <label for="chk" className="hide-menu-btn">
               <FontAwesomeIcon icon="times" />
             </label>

@@ -1,6 +1,8 @@
 import React from "react"
 import { Component } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import styled from "@emotion/styled"
+import "../styles/styles.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faBars, faTimes, faCalendar } from "@fortawesome/free-solid-svg-icons"
@@ -9,7 +11,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+
 library.add(faBars, faTimes, faCalendar)
+
+const Parallax = styled.div`
+  background-image: url("https://www.mon-ebeniste.com/MEB/ebeniste/prix-ebeniste.jpg");
+  width: 750px;
+  height: 295px;
+
+  position:relative;
+  opacity: 0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }`
 
 class BlogIndex extends Component {
   render() {
@@ -19,9 +35,8 @@ class BlogIndex extends Component {
 
     return (
       <Layout title={siteTitle}>
-        <SEO title="Ebenist art">
-          <h1>Ebenist art</h1>
-        </SEO>
+        <SEO title="Ebenist art" />
+          <Parallax  />
       </Layout>
     )
   }
