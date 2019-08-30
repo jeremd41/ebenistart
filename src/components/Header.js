@@ -13,7 +13,7 @@ class Header extends Component {
             <Link to="/">Ebenist'Art</Link>
           </label>
           <Link className="btn-reserver-mobile" to="/">
-            Réserver
+            Contact
           </Link>
           <ul className="menu">
             <Link className="logo" to="/">

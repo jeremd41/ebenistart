@@ -16,11 +16,10 @@ library.add(faBars, faTimes, faCalendar)
 
 const Parallax = styled.div`
   background-image: url("https://www.mon-ebeniste.com/MEB/ebeniste/prix-ebeniste.jpg");
-  width: 750px;
-  height: 295px;
+  min-height: 295px;
 
   position:relative;
-  opacity: 0.70;
+  opacity: 0.40;
   background-position:center;
   background-size:cover;
   background-repeat: no-repeat;
