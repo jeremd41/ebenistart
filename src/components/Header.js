@@ -20,16 +20,16 @@ class Header extends Component {
             Ebenist'Art
             </Link>
             <li>
-              <a href="#">Services</a>
+              <a href="index.html#services">Services</a>
             </li>
             <li>
-                <a href="#">Réalisation</a>
+                <a href="index.html#realisation">Réalisation</a>
             </li>
             <li>
-                <a href="#">A propos</a>
+                <a href="index.html#propos">A propos</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+            <a href="index.html#contact">Contact</a>
             </li>
             <label for="chk" className="hide-menu-btn">
               <FontAwesomeIcon icon="times" />
