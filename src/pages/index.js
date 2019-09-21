@@ -17,10 +17,12 @@ import Propos from "../components/Propos"
 import Contact from"../components/Contact"
 import Realisation from "../components/Realisation"
 
+import imgindex from "../images/index.jpg"
+
 library.add(faBars, faTimes, faCalendar)
 
 const Parallax = styled.div`{
-  background-image: url("http://blog.usine-online.com/wp-content/uploads/2015/12/accueil_03.jpg");
+  background-image: url(${imgindex});
   min-height: 600px;
 
   position:relative;
