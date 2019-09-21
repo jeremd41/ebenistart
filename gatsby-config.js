@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Templates Start Gatsby + Netlify cms Lite`,
+    title: `Ebenist'art`,
     author: `Jeremy diard`,
-    description: `Templates vierge pour gatsby + netlify cms`,
+    description: `Ebenist'art ebeniste dans le loir et cher`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,

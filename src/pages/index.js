@@ -3,6 +3,8 @@ import { Component } from "react"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import "../styles/styles.css"
+import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faBars, faTimes, faCalendar } from "@fortawesome/free-solid-svg-icons"
@@ -37,13 +39,35 @@ const Cadre = styled.div`{
 
 const Text = styled.span`{
     display: inline-block;
+    width: 50%;
     background: rgb(192, 114, 11);
-    font-size: 27px;
+    font-size: 32px;
     text-transform: uppercase;
-    margin: 5px auto;
+    margin: 11% 25%;
     text-align: center;
     color: #111;
     font-family: "Abril Fatface";
+
+    @media screen and (max-width: 762px) {
+      width: 95%;
+      margin: 25% 3%;
+  }
+  }`
+
+  const Text2 = styled.span`{
+    display: inline-block;
+    width: 230px;
+    background: rgb(192, 114, 11);
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 1% 40%;
+    text-align: center;
+    color: #111;
+    font-family: "Abril Fatface";
+
+    @media screen and (max-width: 762px) {
+      margin: 10% 25%;
+  }
   }`
 
 class BlogIndex extends Component {
@@ -57,11 +81,16 @@ class BlogIndex extends Component {
         <SEO title="Ebenist art" />
           <Parallax>
             <Cadre>
-              <Text>Ebeniste plus qu'un simple métier...</Text> 
+              <Bounce left>
+              <Text>Ebeniste plus qu'un simple métier...</Text>
+              </Bounce>
+              <Bounce right>
+              <Text2>C'est un ART</Text2>
+              </Bounce>
             </Cadre>
           </Parallax>
           <Services />
-          <Realisation  />
+          <Realisation />
           <Propos  />
           <Contact />
       </Layout>

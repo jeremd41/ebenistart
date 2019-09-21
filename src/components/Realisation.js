@@ -1,5 +1,8 @@
 import React, { Component } from "react"
-import styled from"@emotion/styled"
+import styled, { css } from "styled-components"
+
+import makeCarousel from 'react-reveal/makeCarousel';
+import Slide from 'react-reveal/Slide';
 
 import rea1 from "../images/rea1.jpg"
 import rea2 from "../images/rea2.jpg"
@@ -10,6 +13,11 @@ const Cadre = styled.div`{
   margin-top: 25px;
   width: 100%;
   height:600px;
+
+  @media screen and (max-width: 762px) {
+    height: 425px;
+    }
+
   }`
 
 const Title = styled.h1`{
@@ -24,10 +32,62 @@ const Unline = styled.div`{
   border-top: 7px solid rgb(192, 114, 11);
 }`
 
-const Image = styled.img`{
-  width: 25%;
-  margin: 10px;
+const Wrapper = styled.div`{
+  width:80%;
+  margin: 1px auto;
+  text-align:center;
 }`
+
+const Image = styled.img`{
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media screen and (max-width: 762px) {
+    width: 100%;
+    height: auto;
+}
+
+}`
+
+const width = '90%', height='500px';
+
+const Container = styled.div`
+  margin: 3px auto;
+  position: relative;
+  overflow: hidden;
+  width: ${width};
+  height: ${height};
+`;
+
+const Arrow = styled.div`
+  text-shadow: 1px 1px 1px #fff;
+  z-index: 100;
+  line-height: ${height};
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 10%;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
+  ${props => props.right ? css`left: 90%;` : css`left: 0%;`}
+
+  @media screen and (max-width: 762px) {
+    line-height: 250px;
+    }
+`;
+
+
+const CarouselUI = ({ position, total, handleClick, children }) => (
+  <Container>
+      {children}
+      <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
+      <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
+  </Container>
+);
+const Carousel = makeCarousel(CarouselUI);
 
 class Realisation extends Component {
     render() {
@@ -35,10 +95,28 @@ class Realisation extends Component {
         <Cadre id="realisation">
             <Title>Nos réalisation</Title>
             <Unline />
-            <Image src={rea1} className="responsive" />
-            <Image src={rea2} className="responsive" />
-            <Image src={rea3} className="responsive" />
-            <Image src={rea4} className="responsive" />
+            <Carousel defaultWait={3000} /*wait for 1000 milliseconds*/ >
+              <Slide right>
+                <Wrapper>
+                  <Image src={rea1} alt="realisation" />
+                </Wrapper>
+              </Slide>
+              <Slide right>
+                <Wrapper>
+                  <Image src={rea2} alt="realisation" />
+                </Wrapper>
+              </Slide>
+              <Slide right>
+                <Wrapper>
+                  <Image src={rea3} alt="realisation" />
+                </Wrapper>
+              </Slide>
+              <Slide right>
+                <Wrapper>
+                  <Image src={rea4} alt="realisation" />
+                </Wrapper>
+              </Slide>
+          </Carousel>
         </Cadre>
       )
     }

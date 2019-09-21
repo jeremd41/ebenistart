@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
 import Iframe from 'react-iframe'
+import Fade from "react-reveal/Fade"
 
 import conception from "../images/conception.png"
 
@@ -8,7 +9,12 @@ const Cadre = styled.div`{
     padding-top: 25px;
     background-color: #393B37;
     width: 100%;
-    height:600px;
+    height:700px;
+
+    @media screen and (max-width: 762px) {
+        height: 1100px;
+    }
+
     }`
 
 const Title = styled.h1`{
@@ -37,16 +43,23 @@ const List = styled.ul`{
 }`
 
 const ObjList = styled.li`{
-    width:100%
-
+    width:100%;
+    margin: 10px;
+    padding: 2px;
+    margin-bottom: 35px;
+    border: 1px solid #111;
 }`
 
 const NameList = styled.h2`{
     text-align: center;
+   
 }`
 
 const Description = styled.p`{
     text-align: center;
+    font-size: 22px;
+    margin: 15px;
+    height: 100px;
 }`
 
 class Services extends Component {
@@ -58,18 +71,24 @@ class Services extends Component {
             <List>
 
                 <ObjList>
+                    <Fade left>
                     <NameList>Conception</NameList>
-                    <Description>lorem</Description>
+                    <Description> Demande de mobilier spécifique avec une fonction particulière </Description>
+                    </Fade>
                 </ObjList>
                 
                 <ObjList>
+                    <Fade left>
                     <NameList>Sur-mesure</NameList>
-                    <Description>lorem</Description>
+                    <Description>Fabrication de meubles sur mesure:  chambre salle de bain salle à manger salon ou encore du mobilier de jardin. </Description>
+                    </Fade>
                 </ObjList>
                 
                 <ObjList>
+                    <Fade left>
                     <NameList>Restauration</NameList>
-                    <Description>lorem</Description>
+                    <Description>Restauration de mobilier ancien et contemporain</Description>
+                    </Fade>
                 </ObjList>
 
             </List>
