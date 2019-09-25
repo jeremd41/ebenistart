@@ -7,13 +7,10 @@ import conception from "../images/conception.png"
 
 const Cadre = styled.div`{
     padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #393B37;
     width: 100%;
-    height:700px;
-
-    @media screen and (max-width: 762px) {
-        height: 1100px;
-    }
+    height:auto;
 
     }`
 
@@ -59,7 +56,7 @@ const Description = styled.p`{
     text-align: center;
     font-size: 22px;
     margin: 15px;
-    height: 100px;
+    height: auto;
 }`
 
 class Services extends Component {

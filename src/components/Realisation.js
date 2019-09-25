@@ -12,11 +12,12 @@ import rea4 from "../images/rea4.jpg"
 const Cadre = styled.div`{
   margin-top: 25px;
   width: 100%;
-  height:600px;
+  height:auto;
+  padding-bottom: 25px;
 
   @media screen and (max-width: 762px) {
-    height: 425px;
-    }
+    height: 350px;
+  }
 
   }`
 
@@ -36,6 +37,7 @@ const Wrapper = styled.div`{
   width:80%;
   margin: 1px auto;
   text-align:center;
+
 }`
 
 const Image = styled.img`{
