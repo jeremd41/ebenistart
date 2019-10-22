@@ -17,19 +17,22 @@ class Header extends Component {
           </Link>
           <ul className="menu">
             <Link className="logo" to="/">
-            Ebenist'Art
+              Ebenist'Art
             </Link>
             <li>
               <a href="index.html#services">Services</a>
             </li>
             <li>
-                <a href="index.html#realisation">Réalisation</a>
+              <a href="index.html#espoir">Espoir</a>
             </li>
             <li>
-                <a href="index.html#propos">A propos</a>
+              <a href="index.html#realisation">Réalisation</a>
             </li>
             <li>
-            <a href="index.html#contact">Contact</a>
+              <a href="index.html#propos">A propos</a>
+            </li>
+            <li>
+              <a href="index.html#contact">Contact</a>
             </li>
             <label for="chk" className="hide-menu-btn">
               <FontAwesomeIcon icon="times" />
