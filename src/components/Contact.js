@@ -3,7 +3,9 @@ import styled from "@emotion/styled"
 import Fade from "react-reveal/Fade"
 
 const Cadre = styled.div`{
+    padding-top: 25px;
     margin-top: 25px;
+    background-color: #393B37;
     width: 100%;
     }`
 

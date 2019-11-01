@@ -12,9 +12,9 @@ class Header extends Component {
             <FontAwesomeIcon className="icon" icon="bars" />
             <Link to="/">Ebenist'Art</Link>
           </label>
-          <Link className="btn-reserver-mobile" to="/">
+          <a className="btn-reserver-mobile" to="index.html#contact">
             Contact
-          </Link>
+          </a>
           <ul className="menu">
             <Link className="logo" to="/">
             Ebenist'Art
@@ -24,6 +24,9 @@ class Header extends Component {
             </li>
             <li>
                 <a href="index.html#realisation">Réalisation</a>
+            </li>
+            <li>
+                <a href="index.html#espoir">Espoir</a>
             </li>
             <li>
                 <a href="index.html#propos">A propos</a>

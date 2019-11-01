@@ -8,12 +8,16 @@ import rea1 from "../images/rea1.jpg"
 import rea2 from "../images/rea2.jpg"
 import rea3 from "../images/rea3.jpg"
 import rea4 from "../images/rea4.jpg"
+import rea5 from "../images/rea5.jpg"
+import rea6 from "../images/rea6.jpg"
 
 const Cadre = styled.div`{
+  padding-top: 25px;
   margin-top: 25px;
   width: 100%;
   height:auto;
   padding-bottom: 25px;
+  background-color: #393B37;
 
   @media screen and (max-width: 762px) {
     height: 350px;
@@ -22,6 +26,7 @@ const Cadre = styled.div`{
   }`
 
 const Title = styled.h1`{
+  margin-top: 25px;
   text-align: center;
   text-transform: uppercase;
 }`
@@ -116,6 +121,15 @@ class Realisation extends Component {
               <Slide right>
                 <Wrapper>
                   <Image src={rea4} alt="realisation" />
+                </Wrapper>
+              </Slide>
+              <Slide right>
+                <Wrapper>
+                  <Image src={rea5} alt="realisation" />
+                </Wrapper>
+              </Slide><Slide right>
+                <Wrapper>
+                  <Image src={rea6} alt="realisation" />
                 </Wrapper>
               </Slide>
           </Carousel>

@@ -12,6 +12,10 @@ const Cadre = styled.div`{
     width: 100%;
     height:auto;
 
+    .video{
+        display: none;
+    }
+
     }`
 
 const Title = styled.h1`{
@@ -59,6 +63,23 @@ const Description = styled.p`{
     height: auto;
 }`
 
+const Texte = styled.div`{
+    width: 50%;
+    padding: 15px;
+    height: 100px;
+    background: rgb(192, 114, 11);
+    color: #fff;
+    margin: 25px auto;
+    padding: 100px 0;
+    text-align:center;
+    font-weight: bold;
+    font-size: 19px;
+
+    @media screen and (max-width: 762px) {
+        margin-bottom: 10px;
+        }
+}`
+
 class Services extends Component {
     render() {
       return (
@@ -89,12 +110,8 @@ class Services extends Component {
                 </ObjList>
 
             </List>
-            <Iframe 
-            width="100%" 
-            className="video"
-            src="https://www.youtube.com/embed/Bcsc1i8B3fw?controls=0" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />   
+            <Texte>Ici prochainement une vidéo de présentation ...</Texte>
+               
         </Cadre>
       )
     }

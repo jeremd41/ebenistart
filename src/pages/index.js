@@ -16,6 +16,7 @@ import Services from "../components/Services"
 import Propos from "../components/Propos"
 import Contact from"../components/Contact"
 import Realisation from "../components/Realisation"
+import Espoir from "../components/Espoir"
 
 import imgindex from "../images/index.jpg"
 
@@ -92,6 +93,7 @@ class BlogIndex extends Component {
             </Cadre>
           </Parallax>
           <Services />
+          <Espoir />
           <Realisation />
           <Propos  />
           <Contact />
