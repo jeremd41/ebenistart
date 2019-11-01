@@ -48,11 +48,13 @@ const ObjList = styled.li`{
     margin: 10px;
     padding: 2px;
     margin-bottom: 35px;
-    border: 1px solid #111;
+    background: rgb(192, 114, 11);
+    
 }`
 
 const NameList = styled.h2`{
     text-align: center;
+    color: #fff;
    
 }`
 
@@ -61,13 +63,14 @@ const Description = styled.p`{
     font-size: 22px;
     margin: 15px;
     height: auto;
+    color: #fff;
 }`
 
 const Texte = styled.div`{
     width: 50%;
     padding: 15px;
     height: 100px;
-    background: rgb(192, 114, 11);
+    background: #111;;
     color: #fff;
     margin: 25px auto;
     padding: 100px 0;
