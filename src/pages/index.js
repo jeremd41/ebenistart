@@ -94,7 +94,6 @@ class BlogIndex extends Component {
             </Bounce>
             <Bounce right>
               <Text2>C'est un ART</Text2>
-<<<<<<< HEAD
               </Bounce>
             </Cadre>
           </Parallax>
@@ -103,24 +102,6 @@ class BlogIndex extends Component {
           <Realisation />
           <Propos  />
           <Contact />
-||||||| merged common ancestors
-              </Bounce>
-            </Cadre>
-          </Parallax>
-          <Services />
-          <Realisation />
-          <Propos  />
-          <Contact />
-=======
-            </Bounce>
-          </Cadre>
-        </Parallax>
-        <Services />
-        <Espoir />
-        <Realisation />
-        <Propos />
-        <Contact />
->>>>>>> 5cadfedfd93a10acac8fb9cc8fd1e827d7f7b477
       </Layout>
     )
   }
