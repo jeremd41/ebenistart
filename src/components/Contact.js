@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
 import Fade from "react-reveal/Fade"
+import {Redirect} from "react-dom"
 
 const Cadre = styled.div`{
     padding-top: 25px;
@@ -70,7 +71,17 @@ const Wrapper = styled.div`{
 }`
 
 class Contact extends Component {
+  state={
+    redirection: false,
+  }
+  
+  handleSubmit(){
+    this.setState({
+      redirection: true,
+    })
+  }
     render() {
+if(!this.state.redirection){
       return (
         <Fade left>
           <Cadre id="contact">
@@ -82,7 +93,7 @@ class Contact extends Component {
             Remplissez le formulaire ci-dessous je m'engage à répondre dans les plus bref délais{" "}
           </p>
           </Wrapper>
-        <Form action="https://hooks.zapier.com/hooks/catch/5739033/o2bw6nh/" method="POST">
+        <Form action="https://hooks.zapier.com/hooks/catch/5739033/o2bw6nh/" onSubmit={this.handleSubmit} method="POST">
           <Input required type="text" id="nom" name="nom" placeholder="Votre nom" />
           <Input
             required
@@ -114,6 +125,12 @@ class Contact extends Component {
           </Cadre>
           </Fade>
       )
+    }
+    else{
+      return(
+        <Redirect to="/" />
+      )
+    }
     }
   }
   

@@ -11,11 +11,6 @@ const Cadre = styled.div`{
     background-color: #393B37;
     width: 100%;
     height:auto;
-
-    .video{
-        display: none;
-    }
-
     }`
 
 const Title = styled.h1`{

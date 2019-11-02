@@ -57,6 +57,7 @@ const Texte2 = styled.div`{
 
   @media screen and (max-width: 762px) {
       margin-bottom: 10px;
+      padding: 15px;
       }
 }`
 

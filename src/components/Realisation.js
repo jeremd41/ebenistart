@@ -20,7 +20,7 @@ const Cadre = styled.div`{
   background-color: #393B37;
 
   @media screen and (max-width: 762px) {
-    height: 350px;
+    height: 600px;
   }
 
   }`
@@ -102,7 +102,7 @@ class Realisation extends Component {
         <Cadre id="realisation">
             <Title>Nos réalisation</Title>
             <Unline />
-            <Carousel defaultWait={3000} /*wait for 1000 milliseconds*/ >
+            <Carousel defaultWait={3000} /*wait for 3000 milliseconds*/ >
               <Slide right>
                 <Wrapper>
                   <Image src={rea1} alt="realisation" />
