@@ -26,11 +26,7 @@ class Header extends Component {
               <a href="index.html#espoir">Espoir</a>
             </li>
             <li>
-                <a href="index.html#espoir">Espoir</a>
-            </li>
-            <li>
                 <a href="index.html#propos">A propos</a>
-              <a href="index.html#realisation">Réalisation</a>
             </li>
             <li>
               <a href="index.html#propos">A propos</a>
