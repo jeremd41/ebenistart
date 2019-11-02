@@ -26,16 +26,11 @@ class Header extends Component {
               <a href="index.html#espoir">Espoir</a>
             </li>
             <li>
-<<<<<<< HEAD
                 <a href="index.html#espoir">Espoir</a>
             </li>
             <li>
                 <a href="index.html#propos">A propos</a>
-||||||| merged common ancestors
-                <a href="index.html#propos">A propos</a>
-=======
               <a href="index.html#realisation">Réalisation</a>
->>>>>>> 5cadfedfd93a10acac8fb9cc8fd1e827d7f7b477
             </li>
             <li>
               <a href="index.html#propos">A propos</a>
