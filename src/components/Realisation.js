@@ -12,12 +12,10 @@ import rea5 from "../images/rea5.jpg"
 import rea6 from "../images/rea6.jpg"
 
 const Cadre = styled.div`{
-  padding-top: 25px;
   margin-top: 25px;
   width: 100%;
   height:auto;
   padding-bottom: 25px;
-  background-color: #393B37;
 
   @media screen and (max-width: 762px) {
     height: 600px;

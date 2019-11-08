@@ -5,6 +5,8 @@ const Cadre = styled.div`{
     margin-top: 25px;
     width: 100%;
     height:auto;
+    background-color: #393B37;
+    padding-top: 25px;
     }`
 
 const Title = styled.h1`{
@@ -36,7 +38,7 @@ const Texte = styled.div`{
     width: 90%;
     padding: 15px;
     height: 400px;
-    background: #393B37;
+    background: #111;
     color: #fff;
     margin-right: 15px;
 
@@ -68,7 +70,7 @@ class Espoir extends Component {
               <Title> De l'espoir à l'autonomie</Title>
               <Unline />
               <Wrapper>
-              <Texte>Service dédié aux personnes à mobilité réduite. Ce service proposé consiste à récolter des financements pour pouvoir fabriquer et offrir du mobilier adapté à des personnes en situation de handicap afin de faciliter leurs gestes qu quotidien.
+              <Texte>Service dédié aux personnes à mobilité réduite. Ce service proposé consiste à récolter des financements pour pouvoir fabriquer et offrir du mobilier adapté à des personnes en situation de handicap afin de faciliter leurs gestes du quotidien.
             </Texte>
             <Texte2>Ici prochainement une vidéo de présentation ...</Texte2>
               </Wrapper>

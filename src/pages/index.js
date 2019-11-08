@@ -98,8 +98,8 @@ class BlogIndex extends Component {
             </Cadre>
           </Parallax>
           <Services />
-          <Espoir />
           <Realisation />
+          <Espoir />
           <Propos  />
           <Contact />
       </Layout>
