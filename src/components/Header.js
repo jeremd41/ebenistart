@@ -11,8 +11,8 @@ const Image = styled.img`{
 
  @media screen and (max-width: 762px) {
   position: absolute;
-  top: 1%
-
+  top: 2%;
+  right: 3%
 }
   
 }`

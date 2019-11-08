@@ -9,7 +9,7 @@ class Layout extends React.Component {
     const { children } = this.props
 
     return (
-      <div>
+      <div className="wrapper">
         <Header />
         <div>{children}</div>
         <Footer />
