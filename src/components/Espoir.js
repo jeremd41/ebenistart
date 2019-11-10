@@ -67,7 +67,7 @@ class Espoir extends Component {
     render() {
       return (
           <Cadre id="espoir"> 
-              <Title> De l'espoir à l'autonomie</Title>
+              <Title>Autre service: De l'espoir à l'autonomie</Title>
               <Unline />
               <Wrapper>
               <Texte>Service dédié aux personnes à mobilité réduite. Ce service proposé consiste à récolter des financements pour pouvoir fabriquer et offrir du mobilier adapté à des personnes en situation de handicap afin de faciliter leurs gestes du quotidien.
