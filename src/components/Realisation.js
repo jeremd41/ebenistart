@@ -18,7 +18,7 @@ const Cadre = styled.div`{
   padding-bottom: 25px;
 
   @media screen and (max-width: 762px) {
-    height: 600px;
+    height: 550px;
   }
 
   }`
@@ -49,10 +49,10 @@ const Image = styled.img`{
   margin-left: auto;
   margin-right: auto;
   
-  @media screen and (max-width: 762px) {
+  /*@media screen and (max-width: 762px) {
     width: 100%;
-    height: auto;
-}
+    max-height: 100%;
+}*/
 
 }`
 

@@ -29,19 +29,20 @@ const Wrapper = styled.div`{
 
     @media screen and (max-width: 762px) {
         flex-direction: column;
-        margin: 0 16px;
     }
 }`
 
 const Texte = styled.div`{
-    width: 90%;
+    width: 92%;
     padding: 15px;
     background: rgb(192, 114, 11);
     color: #fff;
-    margin-right: 15px;
+    margin-right: 16px;
 
     @media screen and (max-width: 762px) {
         margin-bottom: 10px;
+        margin-left: 2px;
+        width: 90%;
         }
 }`
 

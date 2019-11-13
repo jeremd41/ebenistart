@@ -34,16 +34,22 @@ const List = styled.ul`{
 
     @media screen and (max-width: 762px) {
         flex-direction: column;
+        width:80%;
+        margin: 50px auto;
     }
 
 }`
 
 const ObjList = styled.li`{
     width:100%;
-    margin: 10px;
     padding: 2px;
+    margin: 15px;
     margin-bottom: 35px;
     background: rgb(192, 114, 11);
+
+    @media screen and (max-width: 762px) {
+        margin: 15px auto;
+    }
     
 }`
 
@@ -108,8 +114,7 @@ class Services extends Component {
                 </ObjList>
 
             </List>
-            <Texte>Ici prochainement une vidéo de présentation ...</Texte>
-               
+            <Iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/6INe_dlyL4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />  
         </Cadre>
       )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from"@emotion/styled"
+import Iframe from "react-iframe"
 
 const Cadre = styled.div`{
     margin-top: 25px;
@@ -7,6 +8,15 @@ const Cadre = styled.div`{
     height:auto;
     background-color: #393B37;
     padding-top: 25px;
+
+    .video2{
+        margin-top: 20px;
+
+        @media screen and (max-width: 762px) {
+            margin-top: 0px;
+        }
+      }
+
     }`
 
 const Title = styled.h1`{
@@ -30,20 +40,22 @@ const Wrapper = styled.div`{
 
     @media screen and (max-width: 762px) {
         flex-direction: column;
-        margin: 0 16px;
     }
 }`
 
 const Texte = styled.div`{
-    width: 90%;
-    padding: 15px;
-    height: 400px;
+    width: 50%;
+    padding: 100px;
+    height: 150px;
     background: #111;
     color: #fff;
     margin-right: 15px;
 
     @media screen and (max-width: 762px) {
         margin-bottom: 10px;
+        width: 88%;
+        height: 200px;
+        padding: 20px;
         }
 }`
 
@@ -72,7 +84,7 @@ class Espoir extends Component {
               <Wrapper>
               <Texte>Service dédié aux personnes à mobilité réduite. Ce service proposé consiste à récolter des financements pour pouvoir fabriquer et offrir du mobilier adapté à des personnes en situation de handicap afin de faciliter leurs gestes du quotidien.
             </Texte>
-            <Texte2>Ici prochainement une vidéo de présentation ...</Texte2>
+            <Iframe className="video video2" width="560" height="315" src="https://www.youtube.com/embed/rmilcmxNDFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
               </Wrapper>
           </Cadre>
 
