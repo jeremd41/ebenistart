@@ -4,9 +4,8 @@ import Fade from "react-reveal/Fade"
 import {Redirect} from "react-dom"
 
 const Cadre = styled.div`{
-    padding-top: 25px;
     margin-top: 25px;
-    background-color: #393B37;
+    margin-top: 25px;
     width: 100%;
     }`
 

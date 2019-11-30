@@ -3,9 +3,10 @@ import Iframe from 'react-iframe'
 import styled from"@emotion/styled"
 
 const Cadre = styled.div`{
-    margin-top: 25px;
+    padding-top: 25px;
     width: 100%;
     height:auto;
+    background-color: #393B37;
     }`
 
 const Title = styled.h1`{
@@ -33,7 +34,7 @@ const Wrapper = styled.div`{
 }`
 
 const Texte = styled.div`{
-    width: 92%;
+    width: 91%;
     padding: 15px;
     background: rgb(192, 114, 11);
     color: #fff;
